@@ -104,3 +104,23 @@ bool começaCom = texto.StartsWith("A"); = retorna true ou false se começa com 
 string troca = texto.Replace('A', '1'); = altera um caracter por outro, primeiro o caracter antigo, depois o novo
 bool existe = texto.Contains('Ali'); = verifica se no texto contem o caracter ou conjunto de caracteres
 bool existe = texto.Equals('Ali'); = verifica se é exatamente igual
+
+string paragrafo = texto + " " + texto2 + " " + 7; concatenação
+string paragrafo2 = $"A primeira frase: {texto} segunda frase {texto2} {7}"; outro modo de concatenar em versões mais novas
+\n pula linha, \t um tab, para não dar o tab ou pular linha e \\t \\n ou coloca @ no inicio da string, @"C:\teste";
+StringBuilder usado se for concatenar muitas strings e variaveis por questão de performance
+
+string texto3 = "O usuário {0} gosta do numero {1}";
+string resultado = string.Format(texto, "Alice", 7); vai formatar o texto e colocar nos valores 0 e 1 as informações colocadas no format em ordem, gera uma nova string
+
+DateOnly dia = new DateOnly(2023,12,1); resultado 01-Dec-23
+string diaEmText = dia.ToShortDateString(); resultado 01-Dec-23
+string diaEmText = dia.ToLongDateString(); resultado Friday, December 1, 2023
+string diaEmText = dia.ToString(new CultureInfo("pt-BR")); resultado 01/12/2023
+string diaEmText = dia.ToString("d", new CultureInfo("pt-BR")); resultado sexta-feira, 1 de dezembro de 2023, mais formatos na documentação
+string diaEmText = dia.ToString("dd MMMM yyyy", new CultureInfo("pt-BR")); resultado 1 dezembro 2023
+
+DateTime dia = new DateTime(2023,12,1, 20, 07, 1); data e hora, primeiro as horas depois os minutos depois os segundos
+DateTime hoje = new DateTime.Now; pega a hora e data atual do servidor
+DateTime hoje = new DateTime.Today; pega somente a data e por padrão vem hora meia noite
+DateTime hoje = new DateTime.UtcNow; pega a hora universal ainda sendo possivel calcular para ver a hora da maquina do usuário utc=gmt
