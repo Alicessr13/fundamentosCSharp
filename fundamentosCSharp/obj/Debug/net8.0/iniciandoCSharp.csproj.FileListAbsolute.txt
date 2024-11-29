@@ -1,0 +1,14 @@
+C:\Users\Alicessr\Documents\rocketseat\c_sharp\iniciandoCSharp\iniciandoCSharp\bin\Debug\net8.0\iniciandoCSharp.exe
+C:\Users\Alicessr\Documents\rocketseat\c_sharp\iniciandoCSharp\iniciandoCSharp\bin\Debug\net8.0\iniciandoCSharp.deps.json
+C:\Users\Alicessr\Documents\rocketseat\c_sharp\iniciandoCSharp\iniciandoCSharp\bin\Debug\net8.0\iniciandoCSharp.runtimeconfig.json
+C:\Users\Alicessr\Documents\rocketseat\c_sharp\iniciandoCSharp\iniciandoCSharp\bin\Debug\net8.0\iniciandoCSharp.dll
+C:\Users\Alicessr\Documents\rocketseat\c_sharp\iniciandoCSharp\iniciandoCSharp\bin\Debug\net8.0\iniciandoCSharp.pdb
+C:\Users\Alicessr\Documents\rocketseat\c_sharp\iniciandoCSharp\iniciandoCSharp\obj\Debug\net8.0\iniciandoCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alicessr\Documents\rocketseat\c_sharp\iniciandoCSharp\iniciandoCSharp\obj\Debug\net8.0\iniciandoCSharp.AssemblyInfoInputs.cache
+C:\Users\Alicessr\Documents\rocketseat\c_sharp\iniciandoCSharp\iniciandoCSharp\obj\Debug\net8.0\iniciandoCSharp.AssemblyInfo.cs
+C:\Users\Alicessr\Documents\rocketseat\c_sharp\iniciandoCSharp\iniciandoCSharp\obj\Debug\net8.0\iniciandoCSharp.csproj.CoreCompileInputs.cache
+C:\Users\Alicessr\Documents\rocketseat\c_sharp\iniciandoCSharp\iniciandoCSharp\obj\Debug\net8.0\iniciandoCSharp.dll
+C:\Users\Alicessr\Documents\rocketseat\c_sharp\iniciandoCSharp\iniciandoCSharp\obj\Debug\net8.0\refint\iniciandoCSharp.dll
+C:\Users\Alicessr\Documents\rocketseat\c_sharp\iniciandoCSharp\iniciandoCSharp\obj\Debug\net8.0\iniciandoCSharp.pdb
+C:\Users\Alicessr\Documents\rocketseat\c_sharp\iniciandoCSharp\iniciandoCSharp\obj\Debug\net8.0\iniciandoCSharp.genruntimeconfig.cache
+C:\Users\Alicessr\Documents\rocketseat\c_sharp\iniciandoCSharp\iniciandoCSharp\obj\Debug\net8.0\ref\iniciandoCSharp.dll
