@@ -77,3 +77,30 @@ internal = somente classes que estão dentro do projeto podem acessar
 se não colocar modificador de acesso na função vai ser private
 
 classe só tem 2 modificadores, public ou internal, se não marca o padrão e internal
+
+tipos númericos:
+inteiro, diferença entre eles é o intervalo de números aceitos, tem outros tipos inteiros mas de exemplo esses:
+int = 7;
+long = 7;
+uint = 7 (inteiro sem sinal,somente com números positivos);
+int numero = 1_000 pode ser usado o underline para separar as casas dos números
+
+ponto flutuante, decimais, utiliza ponto ao invés de vírgula, diferença e a precisão
+double = 3.14; (precisão 15 a 17)
+float = 3.14f (precisa colocar f senão ele reconhece o número como double, precisão 6 a 9);
+decimal = 3.14m (mesmo caso do f, precisão 28 a 29)
+
+tipo booleano, falso ou verdadeiro
+bool ativo = false;
+bool ativo2 = true
+
+texto, cada caracter tem uma numeração que começa em zero, espaço também e um caracter
+char letra = 'a'; (somente 1 caracter)
+string texto = " Alice "; (conjunto de caracter)
+char primeiraLetra = texto[0]
+
+string nomeSemEspaço = texto.Trim(); = tira espaço final e começo
+bool começaCom = texto.StartsWith("A"); = retorna true ou false se começa com o caracter, é case sensitive, também tem o EndsWith
+string troca = texto.Replace('A', '1'); = altera um caracter por outro, primeiro o caracter antigo, depois o novo
+bool existe = texto.Contains('Ali'); = verifica se no texto contem o caracter ou conjunto de caracteres
+bool existe = texto.Equals('Ali'); = verifica se é exatamente igual
