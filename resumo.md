@@ -267,6 +267,113 @@ uma variavel static e compartilhada com todas as instancias, sempre vai ter o ul
 uma função static não depende das propriedades da classe e de instanciar
 uma classe static não pode ser instanciada e as funções são obrigatóriamente static
 
-debug executa o código linha a linha, para clica na linha para gerar a bolinha vermelha que e a linha que vai iniciar o debug
-
+debug executa o código linha a linha, para clica na linha para gerar a bolinha vermelha que e a linha que vai iniciar o debug (breakpoint)
 ![alt text](image.png)
+
+flexa amarela e onde o debug está executando e na parte supeior pode ir para frente ou f10, ao clicar em f10 executa a linha e vai para a proxima
+![alt text](image-1.png)
+
+em baixo o valor da variavel ao executar
+![alt text](image-2.png)
+
+ao passar por uma função e clicar step into ou f11 ele vai abrir a função e debugar ela, step out ou shift f11 volta para o debug inicial
+
+condicionais, if else, só executa só o código se determinada condição for atendidad/verdadeira, quando entra em um if ignora os outros, não pode ter elseif ou else sem o if
+int num = 10;
+if(num>0){ se atender a condição entra aqui
+    Console.WriteLine("Numero positivo");
+}
+else if(num == 0){se não atender a condição do if entra aqui
+    Console.WriteLine("Numero igual a zero");
+}
+else{  se não atender a condição do if nem do else if entra aqui
+    Console.WriteLine("Numero negativo");
+}
+
+> maior
+< menor
+>= maior ou igual
+<= menor ou igual
+!= diferente
+&& e (and) (todas as condições precisam ser verdadeiras)
+|| ou (somente uma precisa ser verdadeira)
+pode ser usado as condições em conjunto, inclusive && e ||
+
+! na frente de valor booleano inverte o valor 
+string.Equals validar se strings são iguais
+!string.Equals validar se strings são diferentes
+C# começa de cima para baixo da esquerda para a direita
+.ToUpper(); deixa tudo em letras maiusculas
+is null verifica se é nulo, is not null verifica se não é nulo
+bom usar paranteses para separar quando for utilizado muitas condições, mas não e recomendado muitas condições
+
+if ternario, se tem somente 2 alternativas se sim se não, pode ter mais de uma condição com && ou ||
+int numero = 7;
+string autor = numero == 7 ? "Alice": "Stephanie"; //se numero for igual a 7 primeira opção se não segunda
+condição ?(se sim) primeiraOpcao :(se não) segundaOpcao;
+
+switch recebe um parametro, caso condição for verdadeira entra no case, se não entra nos outros, se não entrar em nenhum entra no default
+switch (nivel)
+{
+    case NiveldeDificuldade.Alto:
+        {
+            Console.WriteLine("Nivel alto");
+        }
+        break;
+
+    case NiveldeDificuldade.Medio:
+        { Console.WriteLine("Nivel medio"); }
+        break;
+
+    case NiveldeDificuldade.Baixo:
+        {
+            Console.WriteLine("Nivel baixo");
+        }
+        break;
+
+    default:
+        {
+            Console.WriteLine("sem nivel");
+            break;
+        }
+}
+
+switch ternario, devolve um valor
+int numero = 7;
+string resultado = numero switch{
+    7 => "Alice",
+    >= 1 => "Stephanie, //maior igual a 1
+    3 => "Malia",
+    _ => "nome desconhecido" //default
+};
+
+loopings, após determinada condição executa o código n vezes
+
+na condição for passa onde começa, ate onde vai/objetivo e quanto vai subir/aumentar/incrementar em cada looping ate chegar ao objetivo
+for(int i = 0; i <10 ; i++) //ii++ igual a i = i + 1
+{ //começa em 0 valida se atende a condição(menor que 10) se não atingir a condição incrementa, quando chegar a 9 que é menor que 10 para de incrementar e executar
+    Console.WriteLine("contador:"+i);
+}
+
+para coleção de valores tem o foreach, ele ja percorre a lista e dentro de item passa o resultado do elemento da lista
+var lista2 = new List<string> { "Alice", "Stephanie", "Soares", "Ribeiro" };
+foreach (var item in lista2)
+{
+    Console.WriteLine(item);
+}
+
+while, enquanto a condição for verdadeira executa o código, precisa fazer a condição ter fim se não executa infinitamente
+int num1 = 0;
+while (num1 < 10)
+{
+    Console.WriteLine(num1);
+    num1++;
+}
+
+do while, diferença do while e que ele executa o código e depois valida a condição ou seja executa o código pelo menos 1 vez
+int num2 = 10;
+do
+{
+    Console.WriteLine("teste"); //vai executar pelo menos 1 vez
+    num2++;
+}while (num2 < 10);

@@ -12,7 +12,7 @@ class Program
         Medio,
         Alto
     }
-     static void Main()
+    static void Main()
     {
         //Console.WriteLine("Ola, mundo!");
         //Console. = abre o console e WriteLine = escreve uma linha, texto sempre em "" 
@@ -36,13 +36,13 @@ class Program
 
         inteiros[0] = 1;
 
-        int[,] inteiros2 = new int[10,10];
+        int[,] inteiros2 = new int[10, 10];
 
-        inteiros2[0,3] = 2;
+        inteiros2[0, 3] = 2;
 
-        Console.WriteLine(inteiros2[0,0]);
-        Console.WriteLine(inteiros2[0,2]);
-        Console.WriteLine(inteiros2[0,3]);
+        Console.WriteLine(inteiros2[0, 0]);
+        Console.WriteLine(inteiros2[0, 2]);
+        Console.WriteLine(inteiros2[0, 3]);
 
         List<int> lista = new List<int>();
 
@@ -70,9 +70,79 @@ class Program
         Console.WriteLine(resultado.resultadoAdicao);
         Console.WriteLine(resultado.autor);
 
-        matematica.Teste(valor1:3);
+        matematica.Teste(valor1: 3);
 
         var resuldadoSoma = OperacoesMatematicas.Somar(1, 2);
+
+        int num = 10;
+
+        if (num > 0)
+        {
+            Console.WriteLine("Numero positivo");
+        }
+        else if (num == 0)
+        {
+            Console.WriteLine("Numero igual a zero");
+        }
+        else
+        {
+            Console.WriteLine("Numero negativo");
+        }
+
+        int numero = 7;
+        string autor = numero == 7 ? "Alice" : "Stephanie";
+
+        Console.WriteLine(autor);
+
+        switch (nivel)
+        {
+            case NiveldeDificuldade.Alto:
+                {
+                    Console.WriteLine("Nivel alto");
+                }
+                break;
+
+            case NiveldeDificuldade.Medio:
+                { Console.WriteLine("Nivel medio"); }
+                break;
+
+            case NiveldeDificuldade.Baixo:
+                {
+                    Console.WriteLine("Nivel baixo");
+                }
+                break;
+
+            default:
+                {
+                    Console.WriteLine("sem nivel");
+                    break;
+                }
+
+        }
+
+        for(int i = 0; i < 10; i++)
+        {
+            Console.WriteLine("contador: " + i);
+        }
+
+        var lista2 = new List<string> { "Alice", "Stephanie", "Soares", "Ribeiro" };
+        foreach (var item in lista2)
+        {
+            Console.WriteLine(item);
+        }
+
+        int num1 = 0;
+        while (num1 < 10)
+        {
+            Console.WriteLine(num1);
+            num1++;
+        }
+
+        int num2 = 10;
+        do
+        {
+            Console.WriteLine("teste");
+        }while (num2 < 10);
     }
 }
 
