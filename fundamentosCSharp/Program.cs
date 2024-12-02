@@ -71,6 +71,8 @@ class Program
         Console.WriteLine(resultado.autor);
 
         matematica.Teste(valor1:3);
+
+        var resuldadoSoma = OperacoesMatematicas.Somar(1, 2);
     }
 }
 

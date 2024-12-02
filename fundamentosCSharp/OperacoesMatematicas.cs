@@ -17,5 +17,7 @@ namespace fundamentosCSharp
         {
             Console.WriteLine(valor1 + valor2);
         }
+
+        public static int Somar(int valor1, int valor2) => valor1 + valor2;
     }
 }

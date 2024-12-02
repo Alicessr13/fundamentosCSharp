@@ -15,7 +15,7 @@ class Carro
 
     public Carro(string model)
     {
-
+        Model = model;
     }
 
 }

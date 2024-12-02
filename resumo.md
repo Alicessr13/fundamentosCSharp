@@ -255,3 +255,18 @@ public Carro(string model)
     Model = model;
 }
 Carro meuCarro = new Carro("Lamborghini");
+
+static, significa que não está associado a uma instancia de uma classe, está associado somente com a classe
+internal class OperacoesMatematicas
+{
+    public static int Somar(int valor1, int valor2) => valor1 + valor2;
+}
+var resuldadoSoma = OperacoesMatematicas.Somar(1, 2); executando a função
+
+uma variavel static e compartilhada com todas as instancias, sempre vai ter o ultimo valor atribuido
+uma função static não depende das propriedades da classe e de instanciar
+uma classe static não pode ser instanciada e as funções são obrigatóriamente static
+
+debug executa o código linha a linha, para clica na linha para gerar a bolinha vermelha que e a linha que vai iniciar o debug
+
+![alt text](image.png)
