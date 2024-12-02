@@ -186,3 +186,72 @@ set.Add(1);
 set.Add(5);
 set.Add(1);
 Console.WriteLine(set.Count); resultado é 2 pois não adicionou o valor
+
+funções com parametros
+função publica de retorno vazio, recebe 2 parametros que precisam ser passados ao chamar a função
+public void Adicionar(int valor1, int valor2){ 
+    var resultado = valor1 + valor2;
+    Console.WriteLine(resultado);
+}
+
+chamando a função:
+    var matematica = new OperacoesMatematicas();
+    matematica.Adicionar(1,7);
+
+    para melhor entendimento do código pode se passar parametros nomeados, com parametros nomeados pode alterar a ordem dos parametros passados
+    matematica.Adicionar( valor1: 1, valor2: 7);
+
+    sempre dar nome significativo para função e para as variaveis
+
+função devolvendo valor precisa passar o tipo do resultado que será devolvido e passar o retorno com o return
+public int Adicionar(int valor1, int valor2)
+{
+    return valor1+valor2;
+}
+
+se a função tem somente 1 linha de código ela pode ser resumida:
+public int Adicionar(int valor1, int valor2) => valor1 + valor2;
+
+public int Adicionar(int valor1, int valor2) => Console.WriteLine(valor1+valor2);
+
+função que devolve mais de 1 valor
+public (int,string) Adicionar(int valor1, int valor2)
+{
+    return (valor1 + valor2, "Alice");
+}
+
+Console.WriteLine(resultado.); acessando o primeiro valor retornado
+Console.WriteLine(resultado.Item2); acessando o segundo valor retornado
+
+passando nome para o retorno 
+public (int resultadoAdicao,string autor) Adicionar(int valor1, int valor2)
+{
+    return (valor1 + valor2, "Alice");
+}
+ Console.WriteLine(resultado.resultadoAdicao);
+ Console.WriteLine(resultado.autor);
+ (int resultado, string nome) = matematica.Adicionar(1, 7); recebendo os valores em variaveis diferentes
+
+para tornar um parametro opcional pode se passar um valor para ele na função, valores opcionais devem ser os ultimos da função, devem aparecer somente após os valores obrigatórios
+public void Teste(int valor1, int valor2 = 7)
+{
+    Console.WriteLine(valor1 + valor2);
+}
+
+matematica.Teste(valor1:3); se não passar o valor2 ele vai por padrão 7, se passar o valor2 ele vai sobreescrever o valor 7
+
+propriedades das classes precisam do get e set para poder acessar a variavel, get para recuperar o valor, set para passar um valor
+public string Model {  get; set; }
+pode ter uma variavel/propriedade com mesmo nome do tipo, mas não mesmo nome da classe
+meuCarro.Model = "Lamborghini"; passando valor
+Carro meuCarro = new Carro //passando valor na instanciação
+{
+    Model = "Lamborghini",
+};
+public required string Model {  get; set; } required deixa a propriedade obrigatória
+mas para obrigar a passar o valor pode ser criado uns construtor para ser chamado sempre que instanciar a classe
+public Carro(string model)
+{
+    Model = model;
+}
+Carro meuCarro = new Carro("Lamborghini");

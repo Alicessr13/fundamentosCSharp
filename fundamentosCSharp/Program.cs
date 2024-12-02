@@ -17,10 +17,14 @@ class Program
         //Console.WriteLine("Ola, mundo!");
         //Console. = abre o console e WriteLine = escreve uma linha, texto sempre em "" 
 
-        Carro meuCarro = new Carro(); //criando o objeto Carro dentro da variavel meuCarro do tipo Carro
+        Carro meuCarro = new Carro("Lamborghini");
+        //criando o objeto Carro dentro da variavel meuCarro do tipo Carro
 
-        meuCarro.Ligar();
-        meuCarro.Desligar();
+        //meuCarro.Model = "Lamborghini";
+        //meuCarro.Cor = Cor.Azul;
+        //meuCarro.LancadoEm = new DateOnly(2021, 01,01);
+
+        meuCarro.NomeDoModelo();
 
         NiveldeDificuldade nivel = NiveldeDificuldade.Medio;
 
@@ -60,6 +64,13 @@ class Program
         set.Add(5);
         set.Add(1);
         Console.WriteLine(set.Count);
+
+        var matematica = new OperacoesMatematicas();
+        var resultado = matematica.Adicionar(1, 7);
+        Console.WriteLine(resultado.resultadoAdicao);
+        Console.WriteLine(resultado.autor);
+
+        matematica.Teste(valor1:3);
     }
 }
 
