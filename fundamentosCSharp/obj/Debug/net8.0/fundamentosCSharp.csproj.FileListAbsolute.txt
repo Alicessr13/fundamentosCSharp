@@ -1,0 +1,15 @@
+C:\Users\alici\Documents\csharp\fundamentosCSharp\fundamentosCSharp\bin\Debug\net8.0\fundamentosCSharp.exe
+C:\Users\alici\Documents\csharp\fundamentosCSharp\fundamentosCSharp\bin\Debug\net8.0\fundamentosCSharp.deps.json
+C:\Users\alici\Documents\csharp\fundamentosCSharp\fundamentosCSharp\bin\Debug\net8.0\fundamentosCSharp.runtimeconfig.json
+C:\Users\alici\Documents\csharp\fundamentosCSharp\fundamentosCSharp\bin\Debug\net8.0\fundamentosCSharp.dll
+C:\Users\alici\Documents\csharp\fundamentosCSharp\fundamentosCSharp\bin\Debug\net8.0\fundamentosCSharp.pdb
+C:\Users\alici\Documents\csharp\fundamentosCSharp\fundamentosCSharp\obj\Debug\net8.0\fundamentosCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alici\Documents\csharp\fundamentosCSharp\fundamentosCSharp\obj\Debug\net8.0\fundamentosCSharp.AssemblyInfoInputs.cache
+C:\Users\alici\Documents\csharp\fundamentosCSharp\fundamentosCSharp\obj\Debug\net8.0\fundamentosCSharp.AssemblyInfo.cs
+C:\Users\alici\Documents\csharp\fundamentosCSharp\fundamentosCSharp\obj\Debug\net8.0\fundamentosCSharp.csproj.CoreCompileInputs.cache
+C:\Users\alici\Documents\csharp\fundamentosCSharp\fundamentosCSharp\obj\Debug\net8.0\fundamentosCSharp.sourcelink.json
+C:\Users\alici\Documents\csharp\fundamentosCSharp\fundamentosCSharp\obj\Debug\net8.0\fundamentosCSharp.dll
+C:\Users\alici\Documents\csharp\fundamentosCSharp\fundamentosCSharp\obj\Debug\net8.0\refint\fundamentosCSharp.dll
+C:\Users\alici\Documents\csharp\fundamentosCSharp\fundamentosCSharp\obj\Debug\net8.0\fundamentosCSharp.pdb
+C:\Users\alici\Documents\csharp\fundamentosCSharp\fundamentosCSharp\obj\Debug\net8.0\fundamentosCSharp.genruntimeconfig.cache
+C:\Users\alici\Documents\csharp\fundamentosCSharp\fundamentosCSharp\obj\Debug\net8.0\ref\fundamentosCSharp.dll

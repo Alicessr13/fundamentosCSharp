@@ -124,3 +124,65 @@ DateTime dia = new DateTime(2023,12,1, 20, 07, 1); data e hora, primeiro as hora
 DateTime hoje = new DateTime.Now; pega a hora e data atual do servidor
 DateTime hoje = new DateTime.Today; pega somente a data e por padrão vem hora meia noite
 DateTime hoje = new DateTime.UtcNow; pega a hora universal ainda sendo possivel calcular para ver a hora da maquina do usuário utc=gmt
+
+enum, variavel com mais de uma opção, define os valores possiveis e escolhe uma opção, precisa criar fora da função, pode dar um número para o valor, não precisa ser em sequencia, 
+mas precisam ser positivos e não podem ser duplicados
+
+criar:
+enum NiveldeDificuldade
+{
+    Baixo = 0,
+    Medio = 1,
+    Alto = 2
+}
+
+escolher: NiveldeDificuldade nivel = NiveldeDificuldade.Medio;
+
+tipo var, deixa o compilador selecionar o tipo de variavel, sempre precisa passar um valor na declaração
+var valor = "Alice";
+var valor2 = 13;
+
+object, é um tipo de dados que pode apontar para qualquer tipo de dados
+
+a palavra-chave var define uma variável local com um tipo implícito, enquanto object é um tipo de referência que serve de base para todos os outros tipos
+
+null, representar a ausência de um valor ou referência em tipos que podem aceitar valores nulos, para valores numericos precisa colocar ? no tipo da variavel
+int? idade = null;
+HasValue é usada para verificar se uma variável de tipo anulável contém um valor ou é null, resultado true se tiver valor ou false se for null
+Value retorna o valor armazenado em uma variável anulável, se ela não for null, se for null e usar o value retorna uma exceção
+
+array variaveis para armazenar coleção de valores do mesmo tipo, acesso pelas posições, primeira posição sempre é zero, tamanho fixo (pode aumentar ou diminuir mas e muito custoso para o computador fazer)
+int[] inteiros = new int[10]; array de int com tamanho 10, posições 0 até o 9
+Console.WriteLine(inteiros.Length); ver tamanho do array
+inteiros[0] = 1; primeira posição valor 1
+int[] inteiros = [1,2,3]; quando ja sabe os valores do array, tamanho do array 3
+int[,] inteiros2 = new int[10,10]; array de duas dimensões, 10 linhas por 10 colunas, podem ter mais dimensões
+inteiros2[0,0] = 2; valor 2 na linha 0 coluna 0
+inteiros2[0,3] = 5; valor 5 linha 0 coluna 3
+por default se não colocar valor fica 0
+
+lista, variavel para armazenar coleções de valores do mesmo tipo, mas não tem tamanho fixo, também tem posições e começa com 0, tem somente 1 dimensão
+List<int> lista = new List<int>();
+Console.WriteLine(lista.Count); ver tamanho da lista
+lista.Add(5); adicionar elemento a lista
+lista.Remove(5); remover elemento da lista passando o valor, se tinha um elemento depois ele assume a posição do elemento removido
+lista.RemoveAt(0); remover elemento passando a posição
+lista.Clear(); remove todos os elementos
+acessar elemento: lista[0] passa a posição, lista.First() primeiro elemento, lista.Last ultimo elemento, lista.ElementAt(0) passa a posição
+string resultado = string.Join(" ",lista); juntar uma lista em uma string so, passa a lista e o que vai ser usado de separação
+
+pode ter lista de instancia de classe
+lista de objetos pode receber valores de tipos diferentes
+
+dicionario, para cada chave tem um valor associado, chaves precisam ser valores unicos não pode duplicar
+Dictionary<int, string> dicionario = new Dictionary<int, string>(); chave de valor inteiro e elemento string
+dicionario.Add(1, "Alice"); adicionando chave e valor
+dicionario[1]; acessa os valores pela chave  
+dicionario.ContainsKey("Alice"); verifica se existe o valor, returna true ou false
+
+HashSet, parecido com lista mas os valores precisam ser unicos, não da erro mas não adiciona o valor
+HashSet<int> set = new HashSet<int>();
+set.Add(1);
+set.Add(5);
+set.Add(1);
+Console.WriteLine(set.Count); resultado é 2 pois não adicionou o valor

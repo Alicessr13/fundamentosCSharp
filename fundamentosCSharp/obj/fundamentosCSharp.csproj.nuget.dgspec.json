@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alicessr\\Documents\\rocketseat\\c_sharp\\fundamentosCSharp\\fundamentosCSharp\\fundamentosCSharp.csproj": {}
+    "C:\\Users\\alici\\Documents\\csharp\\fundamentosCSharp\\fundamentosCSharp\\fundamentosCSharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alicessr\\Documents\\rocketseat\\c_sharp\\fundamentosCSharp\\fundamentosCSharp\\fundamentosCSharp.csproj": {
+    "C:\\Users\\alici\\Documents\\csharp\\fundamentosCSharp\\fundamentosCSharp\\fundamentosCSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alicessr\\Documents\\rocketseat\\c_sharp\\fundamentosCSharp\\fundamentosCSharp\\fundamentosCSharp.csproj",
+        "projectUniqueName": "C:\\Users\\alici\\Documents\\csharp\\fundamentosCSharp\\fundamentosCSharp\\fundamentosCSharp.csproj",
         "projectName": "fundamentosCSharp",
-        "projectPath": "C:\\Users\\Alicessr\\Documents\\rocketseat\\c_sharp\\fundamentosCSharp\\fundamentosCSharp\\fundamentosCSharp.csproj",
-        "packagesPath": "C:\\Users\\Alicessr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alicessr\\Documents\\rocketseat\\c_sharp\\fundamentosCSharp\\fundamentosCSharp\\obj\\",
+        "projectPath": "C:\\Users\\alici\\Documents\\csharp\\fundamentosCSharp\\fundamentosCSharp\\fundamentosCSharp.csproj",
+        "packagesPath": "C:\\Users\\alici\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alici\\Documents\\csharp\\fundamentosCSharp\\fundamentosCSharp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Alicessr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alici\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
