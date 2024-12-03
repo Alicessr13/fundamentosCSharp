@@ -1,4 +1,5 @@
 ﻿
+using System.Data;
 using fundamentosCSharp.teste1;
 
 namespace fundamentosCSharp;
@@ -143,6 +144,33 @@ class Program
         {
             Console.WriteLine("teste");
         }while (num2 < 10);
+
+        int num3 = 0;
+
+        while(num3 < 10){
+
+            num3++;
+            if (num3 == 5)
+            {
+                break;
+            }
+            Console.WriteLine(num3);
+        }
+
+        Teste(5);
+    }
+
+    static string Teste(int num)
+    {
+        Console.WriteLine("teste1");
+        if (num == 5)
+        {
+            Console.WriteLine("teste2");
+            return "Alice";
+        }
+
+        Console.WriteLine("teste3");
+        return "Stephanie";
     }
 }
 

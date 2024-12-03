@@ -377,3 +377,40 @@ do
     Console.WriteLine("teste"); //vai executar pelo menos 1 vez
     num2++;
 }while (num2 < 10);
+
+para forçar um looping a parar antes de chegar a condição de parada pode ser usado o break (break do switch e exceção a regra)
+int num3 = 0;
+while(num3 < 10){
+    if (num3 == 5)
+    {
+        break;
+    }
+    Console.WriteLine(num3);
+    num3++;
+}
+
+continue pula o código que tem abaixo e volta no inicio do looping
+int num3 = 0;
+while(num3 < 10){ //nesse caso volta para o while
+    num3++;
+    if (num3 == 5)
+    {
+        continue; // quando chega aqui volta para o while
+    }
+    Console.WriteLine(num3); //quando for 5 não imprime o num3
+}
+
+return além de retornar o valor na função também pode parar o looping como o break, break para somente o looping
+diferença e que o break so pode ser usado em looping (switch exceção), return pode ser usado em funções
+static string Teste(int num)
+{
+    Console.WriteLine("teste1");
+    if (num == 5)
+    {
+        Console.WriteLine("teste2");
+        return "Alice";
+    }
+
+    Console.WriteLine("teste3");
+    return "Stephanie";
+}
