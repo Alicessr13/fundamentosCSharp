@@ -80,15 +80,15 @@ classe só tem 2 modificadores, public ou internal, se não marca o padrão e in
 
 tipos númericos:
 inteiro, diferença entre eles é o intervalo de números aceitos, tem outros tipos inteiros mas de exemplo esses:
-int = 7;
-long = 7;
-uint = 7 (inteiro sem sinal,somente com números positivos);
+int num = 7;
+long num2= 7;
+uint num3 = 7 (inteiro sem sinal,somente com números positivos);
 int numero = 1_000 pode ser usado o underline para separar as casas dos números
 
 ponto flutuante, decimais, utiliza ponto ao invés de vírgula, diferença e a precisão
-double = 3.14; (precisão 15 a 17)
-float = 3.14f (precisa colocar f senão ele reconhece o número como double, precisão 6 a 9);
-decimal = 3.14m (mesmo caso do f, precisão 28 a 29)
+double num = 3.14; (precisão 15 a 17)
+float num2 = 3.14f (precisa colocar f senão ele reconhece o número como double, precisão 6 a 9);
+decimal num3 = 3.14m (mesmo caso do f, precisão 28 a 29)
 
 tipo booleano, falso ou verdadeiro
 bool ativo = false;
@@ -97,7 +97,7 @@ bool ativo2 = true
 texto, cada caracter tem uma numeração que começa em zero, espaço também e um caracter
 char letra = 'a'; (somente 1 caracter)
 string texto = " Alice "; (conjunto de caracter)
-char primeiraLetra = texto[0]
+char primeiraLetra = texto[0];
 
 string nomeSemEspaço = texto.Trim(); = tira espaço final e começo
 bool começaCom = texto.StartsWith("A"); = retorna true ou false se começa com o caracter, é case sensitive, também tem o EndsWith
@@ -121,7 +121,7 @@ string diaEmText = dia.ToString("d", new CultureInfo("pt-BR")); resultado sexta-
 string diaEmText = dia.ToString("dd MMMM yyyy", new CultureInfo("pt-BR")); resultado 1 dezembro 2023
 
 DateTime dia = new DateTime(2023,12,1, 20, 07, 1); data e hora, primeiro as horas depois os minutos depois os segundos
-DateTime hoje = new DateTime.Now; pega a hora e data atual do servidor
+DateTime hoje = DateTime.Now; pega a hora e data atual do servidor
 DateTime hoje = new DateTime.Today; pega somente a data e por padrão vem hora meia noite
 DateTime hoje = new DateTime.UtcNow; pega a hora universal ainda sendo possivel calcular para ver a hora da maquina do usuário utc=gmt
 
@@ -414,3 +414,29 @@ static string Teste(int num)
     Console.WriteLine("teste3");
     return "Stephanie";
 }
+
+c# = linguagem de programação, .net = plataforma que reune varias bibliotecas, podemos criar aplicativos utilizando bibliotecas já existentes, estendendo seu comportamento ou desenvolvendo nossas próprias bibliotecas.
+O .NET é composto por várias bibliotecas escritas em C#, mas também suporta outras duas linguagens, F-Sharp e Visual Basic. Além disso, o .NET oferece recursos como código assíncrono, funções lâmbidas e LINQ
+
+versões do .NET: existem versões LTS com suporte de três anos e versões STS com suporte de 18 meses
+
+.net framework somente windows, .net core multiplataforma (lançado em 2014), a partir de 3.1 mudou para apenas .net versão 5, versão nova sempre em novembro
+
+quando executa o projeto (f5) é feito a build do projeto e depois executa o projeto
+build = verifica se não tem erro de sintaxe no projeto, se as funções existem, ponto e virgula, etc. se tudo está correto transforma o código escrito em c# em outro arquivo com a extensão .dll, esse arquivo e 
+transformado em outra linguagem chamada de linguagem intermediaria (IL), linguagem compacta, leve e independente da plataforma/arquitetura, código feito em windows na linguagem intermediaria funciona em linux por exemplo,
+após a conversão executa o código,O Common Language Runtime (CLR) converte o código de linguagem intermediaria em código nativo e assim leva em consideração a arquitetura, quando converte em código nativo ele executa
+e mostra o resultado, cada sistema operacional tem sua clr
+
+arquivo .dll e .exe
+![alt text](image-3.png)
+
+em projeto do tipo console tem as 2 opções
+JIT just in time = compilador que vai transformar apenas em tempo de execução a dll para um código nativo .dll
+AOT ahead-of-time = compila o código ja para a linguagem nativa .exe
+
+CLI Interface de Linha de Comando, criar e executar projetos usando comandos na linha de comando,  comandos básicos, como new, restore, build, publish, run e test, mais usado para scripts
+melhor explicação na documentação
+new cria projeto, run executa
+build verifica se está faltando dependencias erro de sintaxe e se tudo estiver ok compila o projeto na linguagem intermediaria 
+
