@@ -440,3 +440,5 @@ melhor explicação na documentação
 new cria projeto, run executa
 build verifica se está faltando dependencias erro de sintaxe e se tudo estiver ok compila o projeto na linguagem intermediaria 
 
+api = conjunto de contratos e ferramentas para criação de software, permite que diferentes sistemas se comuniquem e troquem dados, um intermediador que processa as requisições do aplicativo 
+e se conecta ao banco de dados de forma segura
