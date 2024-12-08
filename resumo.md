@@ -440,5 +440,26 @@ melhor explicação na documentação
 new cria projeto, run executa
 build verifica se está faltando dependencias erro de sintaxe e se tudo estiver ok compila o projeto na linguagem intermediaria 
 
-api = conjunto de contratos e ferramentas para criação de software, permite que diferentes sistemas se comuniquem e troquem dados, um intermediador que processa as requisições do aplicativo 
-e se conecta ao banco de dados de forma segura
+api = conjunto de contratos e ferramentas para criação de software, permite que diferentes sistemas se comuniquem e troquem dados, um intermediador que processa as requisições do aplicativo e se conecta ao banco de dados de forma segura
+
+protocolo http, protocolo de transferencia de hypertexto, comunicação cliente e servidor, O cliente envia uma solicitação ao servidor, que processa essa solicitação e envia uma resposta de volta ao cliente
+independente de linguagem, usuário interage com uma página web o navegador(cliente) envia uma solicitação ao servidor, o servidor processa e envia de volta ao cliente
+o protocolo http faz a chamada a url, O protocolo HTTP define os cabeçalhos da requisição, que podem conter informações complementares, e o corpo da mensagem, que contém os dados enviados pelo cliente.
+métodos HTTP, como GET, POST, PUT e DELETE, que definem as ações que podem ser executadas na API
+SSL protocolo de criptografia, garante a comunicação segura entre cliente e servidor, transporta os dados de forma segura(criptografado), https segue http e usa o ssl para criptografar
+
+![alt text]({3EDC6274-8C09-4780-8088-40621984BAEC}.png)
+acessa uma funcionalidade da api atravez de uma chamada em uma url, na url tem um endpoint que tem as funcionalidades
+a chamada utiliza um metodo http, get = recuperar informações, post = criar informações, put = atualizar informação ja existente, delete = deletar informação
+header = passa informações simples (idioma, tipo de resposta, chaves de acesso, etc)
+corpo da mensagem = passa informações importantes (informações do usuário)
+
+a api pode devolver também header e corpo da mensagem ou somente um status code(codigo que indica se a solicitação foi bem sucedida, erro, etc), sempre precisa passar o código
+
+depois de fazer a chamada a api precisa extrair os dados relevantes da resposta para serem utilizados no aplicativo
+
+principais códigos, todo código da familia 200 retorna sucesso, 400 retorna erro, 500 erro desconhecido
+![alt text]({75E9501A-6961-44EB-AE9E-CC755ADB60A3}.png)
+![alt text]({0FA894E0-A9FD-47F9-9AEC-FC057C72188F}.png)
+![alt text]({396121BA-69E5-4549-B709-5A2E67754884}.png)
+![alt text]({816DE54D-979A-4998-BF46-B6E9DB437E8B}.png)
