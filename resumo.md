@@ -463,3 +463,58 @@ principais códigos, todo código da familia 200 retorna sucesso, 400 retorna er
 ![alt text]({0FA894E0-A9FD-47F9-9AEC-FC057C72188F}.png)
 ![alt text]({396121BA-69E5-4549-B709-5A2E67754884}.png)
 ![alt text]({816DE54D-979A-4998-BF46-B6E9DB437E8B}.png)
+
+operações http básicas
+![alt text]({8CC93B2E-1271-4C86-9C96-723C4F3BAB39}.png)
+
+get
+![alt text]({BF7AE291-3D0F-48D5-B80B-6A859BA41138}.png)
+não da pra enviar corpo da requisição no c#, algumas linguagens aceitam mas não é comum, pode passar informações na url ou no header
+
+put 
+![alt text]({0854BE77-8F01-4CE3-AF3B-13C00333376D}.png)
+payload = conjunto de url, metodo, header e corpo da requisição
+
+post, criar recursos, código de status 201, igual o put mas cria um novo dado(post) ao invez de atualizar um existente(put)
+
+delete
+![alt text]({3E20063C-EBDD-4180-8859-168E8CB354F4}.png)
+
+o que é json, formato para troca de dados
+![alt text]({5BCFB0F2-D13E-4277-9FB4-4910808E31B6}.png)
+
+tipos de dados suportados
+![alt text]({8442469B-3822-4795-B3E5-5417303CA854}.png)
+
+![alt text]({CE63793E-D575-4E65-B65B-F5E930D659DB}.png)
+
+![alt text]({D48D41C6-B826-494B-A564-0F59978CF2B0}.png)
+
+api rest, estilo arquitetural usado em sistemas web, para ser uma api rest precisa seguir algumas regras, como comunicação precisa ser http, cada recurso da api está associado a uma url, precisa ser stateless
+![alt text]({04361C5C-2D48-49FA-95DF-9258CDDFEA9E}.png)
+api stateless tem memoria de curto prazo, após processar a requisição a api "esquece" o que ela fez, não guarda nenhum estado, processa a requisição sem referencia a requisição interior.
+outra regra deve ter clara definição do que faz parte do cliente e do servidor, exemplo cliente não precisa saber como o servidor funciona
+
+restful = serviço web que segue os princípios do rest
+
+crud = create(criar um novo dado) read(ler um dado) update(atualizar um dado) e delete(deletar um dado)
+onpremise = servidor proprio do cliente
+
+projeto api visual studio code
+![alt text]({18BD1C85-3977-41D5-94AE-7F9F85DCA4C5}.png)
+
+explicando projeto
+em properties tem o arquivo launchSettings.json que armazena configurações para o modo debug
+modo debug = não é otimizado para performance, da para fazer o debug colocando um breakpoint
+modo release = código final com foco na performance, otimiza o código
+Podemos trocar entre os perfis de execução no Visual Studio e personalizar as configurações conforme necessário.
+
+program.cs = classe entrypoint, ponto de entrada do projeto, quando executa a api ele executa as linhas desse arquivo, nele, configuramos os controles, endpoints e o Swagger, que é uma ferramenta para documentar os endpoints da AP
+
+appsettings.json = arquivo no formato JSON, armazenar informações privadas, como dados de conexão com bancos de dados ou chaves de serviços externos, É importante não incluir essas informações no código, pois elas são confidenciais e podem variar de acordo com o ambiente de desenvolvimento.
+acessa as proprieades do arquivo em program pelo builder.Configuration
+
+controller = dentro da pasta fica a classe controller, dentro dessa classe vão ficar funções/endpoints, um endpoint para cada funcionalidade especifica, controller vai ser o agrupamento de endpoints que tem relação
+
+add controller e para api precisa ir na parte de api
+![alt text]({31B428AA-63C2-45BD-BFBB-1FB8F91A706C}.png)
