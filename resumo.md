@@ -518,3 +518,28 @@ controller = dentro da pasta fica a classe controller, dentro dessa classe vão 
 
 add controller e para api precisa ir na parte de api
 ![alt text]({31B428AA-63C2-45BD-BFBB-1FB8F91A706C}.png)
+
+Swagger guia para a API
+
+pode passar informação na chamada de um endpoint de 3 maneiras, pela rota, nos headers e pelo corpo da mensagem
+get só aceita pela rota e pelo header
+
+##MAUI
+
+desenvolvimento multiplataforma: desenvolvimento de aplicativos nativos compartilhando o mesmo código em diferentes plataformas
+oferece acesso a todos os recursos nativos das plataformas (user interfaces, api(camer, gps, etc)) com a mesma performance
+
+![alt text](image-4.png) 
+para rodar o programa em outro dispositivo precisa reescrever todo o código em outra linguagem
+
+![alt text](image-5.png)
+escreve em c# mas o xamarin compila o código e o .net framework interage com o dispositivo
+
+![alt text](image-6.png)
+passa a desenvolver pouco código especifico em cada plataforma e a interface tem um código unico, renderiza o elemento de acordo com a plataforma
+
+![alt text](image-7.png)
+escreve o código e o .net maui compila para a plataforma, não precisa renderizar, escreve o código e ele ja e compilado em linguagem nativa que roda na mono runtime e no .netcoreCLR
+
+mudanças: singleproject (otimiza trabalho cross-platform), platform code (acesso direto a apis específicas no projeto "principal")
+![alt text](image-9.png)![alt text](image-10.png)![alt text](image-11.png)
