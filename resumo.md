@@ -524,6 +524,7 @@ Swagger guia para a API
 pode passar informação na chamada de um endpoint de 3 maneiras, pela rota, nos headers e pelo corpo da mensagem
 get só aceita pela rota e pelo header
 
+
 ##MAUI
 
 desenvolvimento multiplataforma: desenvolvimento de aplicativos nativos compartilhando o mesmo código em diferentes plataformas
@@ -543,3 +544,30 @@ escreve o código e o .net maui compila para a plataforma, não precisa renderiz
 
 mudanças: singleproject (otimiza trabalho cross-platform), platform code (acesso direto a apis específicas no projeto "principal")
 ![alt text](image-9.png)![alt text](image-10.png)![alt text](image-11.png)
+
+
+Estrutura projeto MAUI
+![alt text](image-12.png)
+pasta resources:
+![alt text](image-14.png)
+
+para coisas especificas de alguma plataforma pode ser feito nesses arquivos/pastas
+![alt text](image-15.png)
+
+projeto inicial, tem o MAUI builder, classe que o aplicativo vai iniciar, configura a fonte, faz a build e retorna o aplicativo para iniciar, pode adicionar dependencias no aplicativo
+![alt text](image-16.png)
+
+eventos
+![alt text](image-17.png) da classe de aplicação
+![alt text](image-18.png) de "janela", tem possibilidade de multiplas janelas, pode criar novas janelas e elas tem seu proprio estado, por padrão tem uma janela e um aplicativo
+![alt text](image-19.png)
+
+shell, modelo padrão de base da aplicação
+![alt text](image-20.png)
+
+pagina, é a raiz, ponto de partida para o que é visto na tela, cada shell tem páginas e essas páginas são especificamente uma página de conteúdo e contem especificamente um elemento visual
+dentro de uma pagina o conteudo principal e um item
+![alt text](image-21.png)
+
+só pode ter mais de um item se tiver um layout4
+![alt text](image-22.png)
