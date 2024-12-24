@@ -25,3 +25,8 @@ MauiProgram chama app, onde tem o metodo InitializeComponent(); que le o xml e c
 ![alt text](image-5.png)
 no app tem o MainPage que chama o AppShell(); no AppShell.xaml tem o content que chama um arquivo main page
 no main page tem as tags que criam a tela (MainPage.xaml) e o código por trás da tela (MainPage.xaml.cs)
+
+para alterar nome de exibição, versão, id, plataformas suportadas, etc pode ser em propriedades do projeto (.net vai replicar no arquivo de configuração de cada plataforma, ou pode configurar especificamente por plataforma)
+![alt text](image-7.png)
+ou clicando 2 vezes no projeto
+![alt text](image-8.png)
