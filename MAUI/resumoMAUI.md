@@ -51,3 +51,9 @@ para realmente alterar o icone ir em limpar e desinstalar o aplicativo ja criado
 ![alt text](image-17.png)![alt text](image-18.png)
 caminho icones C:\Users\alici\Documents\csharp\NumeroDaSorte\NumeroDaSorte\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r
 por ser svg ele consegue criar variações com dimensões sem perder a qualidade
+![alt text](image-19.png)
+
+alterando icone somente no android 
+![alt text](image-20.png)
+
+include = plano de fundo, foregroundfile = acima da plano de fundo, tintColor = pinta o foregroundfile, color = pinta o include, foregroundscale = redimenciona o foreground
