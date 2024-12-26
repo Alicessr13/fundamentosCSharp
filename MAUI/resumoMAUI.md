@@ -56,4 +56,16 @@ por ser svg ele consegue criar variações com dimensões sem perder a qualidade
 alterando icone somente no android 
 ![alt text](image-20.png)
 
-include = plano de fundo, foregroundfile = acima da plano de fundo, tintColor = pinta o foregroundfile, color = pinta o include, foregroundscale = redimenciona o foreground
+include = plano de fundo, foregroundfile = acima da plano de fundo, tintColor = pinta o foregroundfile, color = pinta o include, foregroundscale = redimenciona o foreground, 
+basesize = tamanho original e ele usa esse tamanho para redimencionar, resize = valor bool sim ou não para dizer se quer que a imagem redimencione ou não (padrão sim)
+
+splashScreen = tela de carregamento (somente nos celulares)
+![alt text](image-21.png)
+
+content page c# cria somente um arquivo c# content page xaml cria o xaml e o c#
+![alt text](image-22.png)
+
+componentes podem ser divididos em 3 grupos: 
+páginas: as telas, página, navegação, menus laterais, etc ex: ContentPage
+layout: posicionamento dos elementos, componentes de layout ex: VerticalStackLayout
+interação com o usuário: textos, imagens, botões, compos de entrada de texto ex: Label
