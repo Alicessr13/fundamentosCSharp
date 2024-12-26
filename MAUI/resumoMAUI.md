@@ -69,3 +69,12 @@ componentes podem ser divididos em 3 grupos:
 páginas: as telas, página, navegação, menus laterais, etc ex: ContentPage
 layout: posicionamento dos elementos, componentes de layout ex: VerticalStackLayout
 interação com o usuário: textos, imagens, botões, compos de entrada de texto ex: Label
+
+estilos ficam configurados nesses arquivos, colors ficam as cores principais e styles os estilos aplicados aos componentes, mas também podem ser aplicados no proprio xaml
+![alt text](image-23.png)
+arquivo styles ![alt text](image-24.png)
+estilos no proprio xaml ![alt text](image-25.png)
+
+x:Name="" dando nome a um componente
+
+
