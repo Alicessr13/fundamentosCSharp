@@ -101,3 +101,18 @@ se clicar em voltar destroi a página 2 e volta para a página 1 que ficou guard
 navigation.popasync(); volta para a página anterior, se não tiver página anterior gera uma exceção
 pesquisar modalstack e navigation stack
 navigation.poptorootasync(); volta para a primeira página
+
+FlyoutPage é uma página de conteudo na lateral de uma página central
+para transformar uma contentpage em uma FlyoutPage precisa alterar no xaml para FlyoutPage e no c#(code behind) também
+![alt text](image-34.png)![alt text](image-35.png)
+FlyoutPage não aceita conteudo apenas páginas e as páginas que aceitam o conteudo
+![alt text](image-36.png)
+atribuindo o namespace do projeto para acessar as outras páginas, deixando a página menu como menu e a page1 como primeira página
+![alt text](image-37.png)
+propriedade FlyoutLayoutBehavior="popover" = deixa o menu escondido e precisa clicar para abrir, só precisa em telas maiores
+evento de click no botão do menu que chama a página flyout e o detail onde tem a page1 configurada como primeira página
+![alt text](image-38.png)
+nos celulares por padrão o menu fica "invisivel" sendo necessário puxar o menu para ele aparecer
+para aparecer nos celulares precisa colocar as páginas dentro de navigationpage, assim aparece o botão do menu
+![alt text](image-39.png)![alt text](image-40.png)
+![alt text](image-41.png)![alt text](image-42.png)
