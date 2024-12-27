@@ -77,4 +77,27 @@ estilos no proprio xaml ![alt text](image-25.png)
 
 x:Name="" dando nome a um componente
 
+sobre xaml
+![alt text](image-26.png)
+![alt text](image-27.png)
+![alt text](image-28.png)
 
+tipos de páginas: (todos os tipos de páginas podem trabalhar em conjunto)
+![alt text](image-30.png)
+
+ContentPage = tela de conteudo, a página mais básica e utilizada que existe no MAUI, como o nome diz é uma página de conteúdo. toda a tela do seu aplicativo vai precisar ser construida com contentpage
+NavigationPage = navegação com tela de conteudo, página de navegação, oferece uma estrutura de navegação para abrir e fechar páginas além de adicionar uma navigationBar
+FlyoutPage = navegue entre as telas menu lateral, o famoso menu lateral (Drawer), que mais oferece opções de acesso
+TabbedPage = navegue entre as telas utilizando abas, apresenta as telas no estilo abas, acessadas por seções na parte inferior
+
+title é da contentpage mas só é visivel ao usar navigationpage
+![alt text](image-31.png)
+
+para criar um navigationpage precisa instanciar ela e passar a primeira página que vai ser apresentada
+![alt text](image-32.png)
+ao clicar no botão na page1 gera o evento de click que executa a função Navigation.PushAsync(new Page2()); que muda para a page2, só da pra usar essa função se o navigationpage tiver sido instanciado anteriormente
+![alt text](image-33.png)
+se clicar em voltar destroi a página 2 e volta para a página 1 que ficou guardada na memoria 
+navigation.popasync(); volta para a página anterior, se não tiver página anterior gera uma exceção
+pesquisar modalstack e navigation stack
+navigation.poptorootasync(); volta para a primeira página
