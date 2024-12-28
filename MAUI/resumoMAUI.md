@@ -116,3 +116,19 @@ nos celulares por padrão o menu fica "invisivel" sendo necessário puxar o menu
 para aparecer nos celulares precisa colocar as páginas dentro de navigationpage, assim aparece o botão do menu
 ![alt text](image-39.png)![alt text](image-40.png)
 ![alt text](image-41.png)![alt text](image-42.png)
+
+TabbedPage também precisa transformar em um TabbedPage, precisa incluir o namespace do projeto para chamar as páginas
+![alt text](image-43.png)
+chamado as páginas no arquivo
+![alt text](image-45.png)
+especificando em qual arquivo vai iniciar 
+![alt text](image-46.png)
+ao clicar nas abas ja altera
+![alt text](image-47.png)
+BarBackground = troca a cor da barra de fundo podendo usar combinações de cores/degrade
+BarBackgroundColor = trocar a cor da barra de fundo para uma cor sólida
+SelectedTabColor = muda a cor de fundo do elemento selecionado no momento, comportamento vária de sistema operacional
+UnselectedTabColor = muda a cor de fundo dos elementos que não estão selecionados
+BarTextColor = altera a cor dos textos evitar usar no android
+alterando icone das páginas na barra (mesmo o arquivo estando em svg melhor colocar em png):
+![alt text](image-48.png)
