@@ -132,3 +132,14 @@ UnselectedTabColor = muda a cor de fundo dos elementos que não estão seleciona
 BarTextColor = altera a cor dos textos evitar usar no android
 alterando icone das páginas na barra (mesmo o arquivo estando em svg melhor colocar em png):
 ![alt text](image-48.png)
+
+tipos de layout
+![alt text](image-49.png)
+StackLayout = posiciona os elementos filhos em uma pilha horizontal ou verticalmente, VerticalStackLayout, HorizontalStackLayout
+Grid = organiza os elementos dentro de uma estrutura de tabelas com linhas e colunas, pode estar um elemento em cima do outro, dimensionamento com valores fixos ou porcentagens
+AbsoluteLayout = tem o poder de colocar o elemento onde quiser, baseado em regras de posicionamento e tamanho
+FlexLayout = permite que os elementos responsivos dentro de um container sejam organizados automaticamente, dependendo do tamanho da tela
+
+ContentPage só suporta um elemento por vez e ele ocupa todo o tamanho da tela, por isso precisa escolhe um layout principal e colocar os elementos dentro do layout
+stacklayout
+![alt text](image-50.png)
